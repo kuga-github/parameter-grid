@@ -134,7 +134,7 @@ class ParameterGrid:
         -------
         keys : 2-dimensional list
             List of keys representing paths to parameters
-        values: list of integers
+        values: list of any
             List of parameter values
         """
 
