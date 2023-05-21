@@ -10,8 +10,6 @@ class ParameterGrid:
     Python built-in function iter.
     The order of the generated parameter combinations is deterministic.
 
-    Read more in the :ref:`User Guide <grid_search>`.
-
     Parameters
     ----------
     param : dict of str to sequence, or sequence of such
