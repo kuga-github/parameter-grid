@@ -4,12 +4,7 @@ A utility for generating parameter combinations and facilitating iteration, prov
 This `ParameterGrid` iterator can extract list of parameters from the grid and gerenate all combinations of them, regardless of the nesting level of the values.
 ### Example
 ```python
-param_grid = {
-    'a': [1,2],
-    'b': {
-        'c': [True, False],
-    },
-}
+param_grid = {'a': [1,2], 'b': {'c': [True, False]}}
 
 list(ParameterGrid(param_grid)) == (
     [{'a': 1, 'b': {'c': True}}, {'a': 1, 'b': {'c': False}},
@@ -22,12 +17,7 @@ you would encounter a error if you try to perform the same operation using `skle
 ```python
 from sklearn.model_selection import ParameterGrid
 
-param_grid = {
-    'a': [1,2],
-    'b': {
-        'c': [True, False],
-    },
-}
+param_grid = {'a': [1,2], 'b': {'c': [True, False]}}
 
 ParameterGrid(param_grid)
 ```
