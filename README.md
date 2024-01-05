@@ -13,7 +13,7 @@ list(ParameterGrid(param_grid)) == (
 ```console
 True
 ```
-you would encounter an error if you try to perform the same operation using `sklearn.model_selection.ParameterGrid`.
+You would encounter an error if you try to perform the same operation using `sklearn.model_selection.ParameterGrid`.
 ```python
 from sklearn.model_selection import ParameterGrid
 
