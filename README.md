@@ -13,7 +13,7 @@ list(ParameterGrid(param_grid)) == (
 ```console
 True
 ```
-you would encounter a error if you try to perform the same operation using `sklearn.model_selection.ParameterGrid`.
+you would encounter an error if you try to perform the same operation using `sklearn.model_selection.ParameterGrid`.
 ```python
 from sklearn.model_selection import ParameterGrid
 
@@ -22,5 +22,6 @@ param_grid = {'a': [1,2], 'b': {'c': [True, False]}}
 ParameterGrid(param_grid)
 ```
 ```console
-TypeError: Parameter grid for parameter 'b' needs to be a list or a numpy array, but got {'c': [True, False]} (of type dict) instead. Single values need to be wrapped in a list with one element.
+TypeError: Parameter grid for parameter 'b' needs to be a list or a numpy array,
+but it got {'c': [True, False]} (of type dict) instead. Single values need to be wrapped in a list with one element.
 ```
